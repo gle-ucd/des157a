@@ -1,0 +1,74 @@
+body {
+    background-color: #FFC15E;
+}
+
+#banner {
+    width: 1100px;
+    height: 250px;
+}
+
+#banner h2 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 1.875em;
+    color: #1B438B;
+}
+
+h1 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+    font-size: 10em;
+    color: #1B438B;
+}
+
+main {
+    display: flex;
+}
+
+section h2{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    font-size: 1.5em;
+    color: #1B438B;
+}
+
+section ul {
+    list-style-type: none; 
+}
+
+section ul li::before {
+    
+}
+
+section ul li a{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 1.25em;
+    color: #1B438B;
+
+    line-height: 40px;
+
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+/* body {
+    max-width: 1200px;
+
+    margin: 0 auto;
+} */
