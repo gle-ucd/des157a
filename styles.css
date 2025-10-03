@@ -1,10 +1,16 @@
 body {
     background-color: #FFC15E;
+    max-width: 1200;
+    margin: 0 auto;
 }
 
 #banner {
-    width: 1100px;
+    width: 1200px;
     height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #banner h2 {
@@ -15,6 +21,7 @@ body {
 
     font-size: 1.875em;
     color: #1B438B;
+    margin-left: 10px;
 }
 
 h1 {
@@ -23,12 +30,19 @@ h1 {
     font-weight: 900;
     font-style: normal;
 
+    text-transform: uppercase;
     font-size: 10em;
     color: #1B438B;
+
+    margin: -50px 0 82px 10px;
 }
 
 main {
     display: flex;
+}
+
+section {
+    margin: 0 70px;
 }
 
 section h2{
@@ -39,14 +53,15 @@ section h2{
 
     font-size: 1.5em;
     color: #1B438B;
+
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 section ul {
     list-style-type: none; 
-}
-
-section ul li::before {
-    
+    padding-left: 0;
+    margin: 0;
 }
 
 section ul li a{
@@ -61,14 +76,34 @@ section ul li a{
     line-height: 40px;
 
     text-decoration: none;
+    transition: 0.3s ease;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+    font-size: 1.3em;
 }
 
 footer {
-    text-align: center;
+    margin: 10px 0 0 0;
+    background-color: #fbd49699;
 }
 
-/* body {
-    max-width: 1200px;
+footer a{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 
-    margin: 0 auto;
-} */
+    font-size: 1em;
+    color: #1B438B;
+
+    padding-left: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
