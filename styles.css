@@ -1,5 +1,11 @@
 body {
+    background-image: url(images/background-img.svg);
+    background-repeat: no-repeat;
     background-color: #FFC15E;
+}
+
+html {
+    background-color: #A4B6D6;
 }
 
 #banner {
@@ -9,6 +15,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    background-image: url(images/banner-img.svg);
+    background-repeat: no-repeat;
 }
 
 #banner h2 {
@@ -30,9 +39,24 @@ h1 {
 
     text-transform: uppercase;
     font-size: 10em;
-    color: #1B438B;
+
+    color: transparent;
+    background-image: url(images/heading-img.svg);
+    /* background-size: 200%; */
+    background-position: 0% 50%;
+    background-clip: text;
+    animation: animate-background 9s linear infinite;        
 
     margin: -50px 0 82px 10px;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 main {
@@ -40,7 +64,8 @@ main {
 }
 
 section {
-    margin: 0 70px;
+    margin: 0 25px 0 50px;
+    width: 160px;
 }
 
 section h2{
@@ -83,8 +108,9 @@ section ul li a:hover {
 }
 
 footer {
-    margin: 10px 0 0 0;
-    background-color: #fbd49699;
+    margin: 56.01px 0 0 0;
+    background-color: #fbd496c1;
+    padding: 10px 0;
 }
 
 footer a{
