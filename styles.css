@@ -23,6 +23,8 @@ html {
     background-size: 100%;
     transition: all 1s ease;
 
+    cursor: pointer;
+
 }
 
 #banner:hover {
