@@ -18,6 +18,15 @@ html {
 
     background-image: url(images/banner-img.svg);
     background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: 100%;
+    transition: all 1s ease;
+
+}
+
+#banner:hover {
+    background-size: 108%;
 }
 
 #banner h2 {
