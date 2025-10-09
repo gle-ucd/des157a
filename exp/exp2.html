@@ -10,6 +10,7 @@
     <p>Look at this cool color!!!</p>
 
     <script>
+        /* This script asks the user for a color from the list in the prompt. The answer from the user then goes through a function to determine if the answer is actually a color listed, if it is it returns the color to be used in changing the background color. If the answer doesn't match the list, the function replaces the paragraph saying "Look at this cool color" with "You didn't put one of the colors listed" */
         
         var userInput = prompt("Pick your favorite color from this list: magenta, coral, aquamarine, orchid","");
         userInput.tolowerCase;
@@ -22,7 +23,7 @@
             if (color === 'coral'|| color === 'magenta' || color === 'aquamarine' || color === 'orchid') {
                 return(color)
             } else {
-                paragraph.innerHTML = "You didn't put one of the colors listed";
+                paragraph.innerHTML = "You didn't put one of the colors listed :(";
             }
         }
 
