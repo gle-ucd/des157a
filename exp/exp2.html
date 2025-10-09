@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation - Functions & DOM</title>
+
+    <style>
+        .magenta { color: magenta; }
+		.coral { color: coral; }
+        .aquamarine { color: aquamarine; }
+		.orchid { color: orchid; }
+    </style>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <p>Look at this cool color!!!</p>
+
+    <script>
+        
+        var userInput = prompt("Pick your favorite color from this list: magenta, coral, aquamarine, orchid","");
+
+
+        function backgroundColor(userInput){
+            
+            var input = userInput.toLowerCase;
+
+            var paragraph = document.querySelector('p');
+
+            if (input === 'coral'|| input === 'magenta' || input === 'aquamarine' || input === 'orchid') {
+                return(input)
+            } else {
+                paragraph.innerHTML = "You didn't put one of the colors listed";
+            }
+        }
+
+        document.body.style.backgroundColor = input;
+
+    </script>
+</body>
+</html>
