@@ -1,4 +1,4 @@
-body {
+#portal {
     background-image: url(images/background-img.svg);
     background-repeat: no-repeat;
     background-color: #FFC15E;
@@ -42,7 +42,7 @@ html {
     margin-left: 10px;
 }
 
-h1 {
+#portal-h1 {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
@@ -141,4 +141,14 @@ footer a{
         max-width: 1200px;
         margin: auto;
     }
+}
+
+
+.innerpage {
+    background-image: none;
+    background-color: #FFC15E;
+}
+.MadLib img {
+    display: block;
+    margin: auto;
 }
