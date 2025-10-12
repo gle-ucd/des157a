@@ -174,12 +174,12 @@ footer a{
 }
 
 .innerpage p {
-    font-family: "Oswald", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-style: normal;
 
     font-size: 1.25em;
-    color: #1B438B;
+    color: #122B59;
     padding-left: 10px;
 }
 
@@ -190,7 +190,7 @@ footer a{
     font-style: normal;
 
     font-size: 1em;
-    color: #1B438B;
+    color: #122B59;
 
     text-decoration: underline;
 }
@@ -219,7 +219,7 @@ footer a{
 
 .innerpage .learning-journal-article {
     margin: 20px;
-    background-color: #fbd496ce;
+    background-color: #fbd496f0;
     padding: 20px;
     border-radius: 20px;
 }
@@ -232,6 +232,8 @@ footer a{
 
 .innerpage .learning-journal-article p {
     padding-left: 0;
+    line-height: 1.9em;
+    margin-bottom: 15px;
 }
 
 .learning-journal-info div {
