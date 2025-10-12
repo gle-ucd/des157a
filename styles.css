@@ -190,7 +190,7 @@ footer a{
     font-style: normal;
 
     font-size: 1em;
-    color: #122B59;
+    color: #1B438B;
 
     text-decoration: underline;
 }
@@ -234,6 +234,10 @@ footer a{
     padding-left: 0;
     line-height: 1.9em;
     margin-bottom: 15px;
+}
+
+.innerpage .learning-journal-article p a{
+   color: #122B59;
 }
 
 .learning-journal-info div {
