@@ -21,7 +21,9 @@ body {
 
   height: 750px;
 
-  padding: 1px
+  padding: 1px;
+
+  position: relative;
 }
 
 html {
