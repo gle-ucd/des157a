@@ -172,7 +172,7 @@ label input{
   bottom: 4%;
 
   /* turn overlay on and off */
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .user-input-style {
@@ -190,7 +190,11 @@ label input{
   bottom: 28%;
 
   /* turn overlay on and off */
-  visibility: hidden;
+  /* visibility: hidden; */
+}
+
+.show {
+  visibility: visible;
 }
 
 @media only screen and (min-width: 800px) {
