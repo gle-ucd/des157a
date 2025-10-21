@@ -132,7 +132,7 @@ label input{
   flex: 1;
 }
 
-button {
+#button {
   background-color: #52AA5E;
   padding: 10px 10px;
   width: 114px;
