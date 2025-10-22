@@ -67,7 +67,7 @@
             alert(myText);
         } 
         else if (sixthEntry == ''){
-            myText = "Please provide a fourth adjective";
+            myText = "Please provide a third adjective";
             alert(myText);
         } 
         else if (seventhEntry == ''){
