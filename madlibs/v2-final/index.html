@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLib V1</title>
+
+    <script src="script.js" defer></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mad Lib</h1>
+    </header>
+
+    <main>
+        <h2>Trail Run Troubles</h2>
+        <form>
+            <label for="firstInput">Adjective:
+                <input type="text" id="firstInput" >
+            </label>
+
+            <label for="secondInput">Article of Clothing:
+                <input type="text" id="secondInput" >
+            </label>
+
+            <label for="thirdInput">Adjective:
+                <input type="text" id="thirdInput" >
+            </label>
+
+            <label for="fourthInput">Noun:
+                <input type="text" id="fourthInput" >
+            </label>
+
+            <label for="fifthInput">Animal:
+                <input type="text" id="fifthInput" >
+            </label>
+
+            <label for="sixthInput">Adjective:
+                <input type="text" id="sixthInput" >
+            </label>
+            
+            <label for="seventhInput">Part of Body (plural):
+                <input type="text" id="seventhInput" >
+            </label>
+
+            <label for="eighthInput">Noun:
+                <input type="text" id="eighthInput" >
+            </label>
+
+            <label for="ninthInput">Adverb:
+                <input type="text" id="ninthInput" >
+            </label>
+    
+            <label for="tenthInput">Verb ending in -ing:
+                <input type="text" id="tenthInput" >
+            </label>
+
+            <input type="submit" id="button">
+        </form>
+    </main>
+
+    <div id="overlay">
+        <div id="overlay-heading">
+            <h2>Trail Run Troubles</h2> 
+            <i id="close-overlay-icon" class="fas fa-times" style="color: #4B2C36;"></i>
+        </div>
+        <article id="content"></article>
+    </div>
+    <img id="submit-img-add" src="images/girl-falling.svg" width="203" height="223" alt="after submission picture: girl falling">
+</body>
+</html>
