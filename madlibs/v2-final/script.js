@@ -8,15 +8,25 @@
     //Overlay itself
     const overlay = document.querySelector('#overlay');
     overlay.style.visibility = 'hidden';
+    overlay.style.opacity = 0;
     const imgSubmit = document.querySelector('#submit-img-add');
     imgSubmit.style.visibility = 'hidden';
+    imgSubmit.style.opacity = 0;
+
+    //Other aimations
+    const body = document.querySelector('body');
+    body.style.backgroundSize = "auto";
 
     //Closing overlay
     const closeOverlay = document.querySelector('#close-overlay-icon');
 
     closeOverlay.addEventListener('click', function(){
         overlay.style.visibility = 'hidden';
+        overlay.style.opacity = 0;
         imgSubmit.style.visibility = 'hidden';
+        imgSubmit.style.opacity = 0;
+
+        body.style.backgroundSize = "auto";
     });
 
     //Form
@@ -88,7 +98,11 @@
         } 
         else {
             overlay.style.visibility= 'visible';
+            overlay.style.opacity = 1;
             imgSubmit.style.visibility = 'visible';
+            imgSubmit.style.opacity = 1;
+
+            body.style.backgroundSize = '110% 110%';
 
             document.querySelector('#firstInput').value = '';
             document.querySelector('#secondInput').value = '';
