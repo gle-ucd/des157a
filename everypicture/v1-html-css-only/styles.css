@@ -52,8 +52,9 @@ p {
     background-color: rgb(221, 213, 213);
 
     border: 10px solid transparent;
-    border-image: linear-gradient(0deg,rgba(48, 0, 25, 0.96) 9%, rgb(253, 130, 64) 100%);
-    border-image-slice: 1;
+    border-image: url(images/BorderImg.png) 10 round;
+    /* border-image-slice: 20; */
+    border-image-outset: 5px;
 
 
     overflow: hidden;   
@@ -123,8 +124,9 @@ p {
     background-color: rgb(221, 213, 213);
 
     border: 10px solid transparent;
-    border-image: linear-gradient(0deg,rgba(48, 0, 25, 0.96) 9%, rgb(253, 130, 64) 100%);
-    border-image-slice: 1;
+    border-image: url(images/BorderImg.png) 10 round;
+    /* border-image-slice: 20; */
+    border-image-outset: 5px;
 
 
     overflow: hidden;   
@@ -194,8 +196,9 @@ p {
     background-color: rgb(221, 213, 213);
 
     border: 10px solid transparent;
-    border-image: linear-gradient(0deg,rgba(48, 0, 25, 0.96) 9%, rgb(253, 130, 64) 100%);
-    border-image-slice: 1;
+    border-image: url(images/BorderImg.png) 10 round;
+    /* border-image-slice: 20; */
+    border-image-outset: 5px;
 
 
     overflow: hidden;   
@@ -253,6 +256,149 @@ p {
     mask-repeat: no-repeat;
     /* z-index: 1; */
 }
+
+/*----------------------------- Image 4 -------------------------*/
+#image-container-4 {
+    width: 469px;
+    height: 700px;
+    margin: auto;
+
+    /* padding: 10px; */
+    background-color: rgb(221, 213, 213);
+
+    border: 10px solid transparent;
+    border-image: url(images/BorderImg.png) 10 round;
+    /* border-image-slice: 20; */
+    border-image-outset: 5px;
+
+
+    overflow: hidden;   
+    position: relative;
+} 
+
+#Ref4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transition: transform 2s ease, opacity 4s ease-in;
+}
+
+#P4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: opacity 5s ease, mask-size 4s ease-in-out;
+}
+
+.default-ref4 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 1;
+    /* z-index: 1; */
+}
+
+.animate-ref4 {
+    transform: 
+        translate(-130px, -163px) rotate(9deg) 
+        scale(0.9);
+        opacity: 0;
+        /* z-index: 0; */
+}
+
+.default-p4 {
+    /* z-index: 0; */
+    opacity: 0;
+    mask-image: url(images/PaintbrushMask.svg);
+    mask-size: 0%;
+    mask-position: center;
+    mask-repeat: no-repeat;
+}
+
+.animate-p4 {
+    opacity: 1;
+    mask-image: url(images/PaintbrushMask.svg);
+    mask-size: 700%;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    /* z-index: 1; */
+}
+
+/*----------------------------- Image 5 -------------------------*/
+#image-container-5 {
+    width: 423px;
+    height: 700px;
+    margin: auto;
+
+    /* padding: 10px; */
+    background-color: rgb(221, 213, 213);
+
+    border: 10px solid transparent;
+    border-image: url(images/BorderImg.png) 10 round;
+    /* border-image-slice: 20; */
+    border-image-outset: 5px;
+
+
+    overflow: hidden;   
+    position: relative;
+} 
+
+#Ref5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transition: transform 2s ease, opacity 4s ease-in;
+}
+
+#P5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: opacity 5s ease, mask-size 4s ease-in-out;
+}
+
+.default-ref5 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 1;
+    /* z-index: 1; */
+}
+
+.animate-ref5 {
+    transform: 
+        translate(-130px, -163px) rotate(9deg) 
+        scale(0.9);
+        opacity: 0;
+        /* z-index: 0; */
+}
+
+.default-p5 {
+    /* z-index: 0; */
+    opacity: 0;
+    mask-image: url(images/PaintbrushMask.svg);
+    mask-size: 0%;
+    mask-position: center;
+    mask-repeat: no-repeat;
+}
+
+.animate-p5 {
+    opacity: 1;
+    mask-image: url(images/PaintbrushMask.svg);
+    mask-size: 700%;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    /* z-index: 1; */
+}
+
 
 @media only screen and (min-width: 800px) {
     body {
