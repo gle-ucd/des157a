@@ -49,6 +49,27 @@ p {
     margin-left: 120px;
 }
 
+#buttons {
+    margin-left: 120px;
+    
+    position: absolute;
+    top: 60%;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 1em;
+
+    background-color: #734510;
+    color: #e5e5e5;
+
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
 
 
 .img-container {
@@ -75,8 +96,8 @@ p {
     opacity: 0;
 }
 
-.text {
-    
+.text-show {
+    width: 500px;
 }
 /*----------------------------- Image 1 -------------------------*/
 #slide1 {
