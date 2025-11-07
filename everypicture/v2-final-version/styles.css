@@ -1,10 +1,11 @@
 body {
     height: 750px;
 
-    margin: 0 auto;
+    /* margin: 0 auto; */
 
     background-image: url(images/background-body.png);
     background-repeat: no-repeat;
+    background-size: cover;
 
     position: relative;
 
