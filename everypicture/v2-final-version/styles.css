@@ -28,7 +28,7 @@ h1 {
     font-size: 7em;
     color: #512B00;
     padding-bottom: 0;
-    margin: 50px 0 0 120px;
+    margin: 80px 0 0 120px;
 }
 
 h2 {
@@ -52,11 +52,15 @@ p {
     margin-left: 120px;
 }
 
+#tutorial-text {
+    font-weight: 600;
+}
+
 #buttons {
     margin-left: 120px;
     
     position: absolute;
-    top: 60%;
+    top: 70%;
 }
 
 button {
@@ -112,6 +116,10 @@ button {
 #text1, #text2, #text3, #text4, #text5 {
     position: absolute;
     transition: opacity 0.6s ease;
+
+    top: 220px;
+
+    line-height: 1.5em;
 }
 
 /*----------------------------- Image 1 -------------------------*/
