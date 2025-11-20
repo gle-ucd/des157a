@@ -194,7 +194,7 @@ footer a{
 
     text-decoration: underline;
 }
-.MadLib img {
+.MadLib img, .GameOn img{
     display: block;
     margin: auto;
 }
@@ -257,3 +257,9 @@ footer a{
     align-items: center;
 }
 
+/* Game On */
+.GameOn-Comp {
+    display: flex;
+
+    margin-bottom: 10px;
+}
