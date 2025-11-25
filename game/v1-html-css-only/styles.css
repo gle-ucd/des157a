@@ -1,0 +1,691 @@
+body {
+    position: relative;
+    overflow: hidden;
+    height: 750px;
+
+    padding-top: 1px;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-active {
+    background-image: url('images/bg-active.png');
+}
+
+html {
+    /* background-color: #A46A90; */
+
+    background-image: url(images/BodyBackground.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+
+/* .patrick-hand-sc-regular {
+  font-family: "Patrick Hand SC", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.itim-regular {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
+
+/* ----------- Start Screen -----------*/
+#start {
+    position: absolute;
+    width: 900px;
+    height: 570px;
+    border-radius: 20px;
+    
+    left: 150px;
+    
+    margin-top: 100px;
+
+    background-image: url(images/StartScreen-img.svg);
+    background-repeat: no-repeat;
+}
+
+#starting-screen {
+    position: absolute;
+    width: 500px;
+}
+
+#start-game {
+    position: relative;
+
+    background-color: #D8A47F;
+    color: #0F7173;
+
+    padding: 5px 30px;
+    border: none;
+    border-radius: 10px;
+
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+
+    left: 362px;
+    top: 497px;
+}
+
+#start-game:hover {
+    -webkit-box-shadow: 0px 0px 6px 5px rgba(39,41,50,0.28); 
+    box-shadow: 0px 0px 6px 5px rgba(39,41,50,0.28);
+}
+
+#tutorial-text {
+    position: absolute;
+    left: 74px;
+    top: 240px;
+}
+
+#tutorial-text h2 {
+    color: #E7ECEF;
+
+    font-size: 1.5em;
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+#tutorial-text p {
+    color: #E7ECEF;
+
+    font-size: 1em;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    line-height: 24px;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul li {
+    color: #E7ECEF;
+
+    font-size: 1em;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    line-height: 24px;
+}
+
+/* --------------------------------*/
+
+/* ----------- Game Screen -----------*/
+#game {
+    visibility: hidden;
+    position: relative;
+    top: 40px;
+    left: 30px;
+}
+
+#stack {
+    position: relative;
+}
+
+#card-container-game-score, #dealcards {
+    position: relative;
+}
+/* buttons */
+#playerbuttons {
+    position: relative;
+    visibility: hidden;
+
+}
+
+#player1options {
+    position: absolute;
+    left: 105px;
+    top: 400px;
+}
+
+#player2options {
+    position: absolute;
+    left: 745px;
+    top: 400px;
+}
+
+#pass1, #pass2, #takeCards1, #takeCards2 {
+    background-color: #0F7173;
+    color: #E7ECEF;
+
+    width: 135px;
+    border: none;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25em;
+}
+
+#pass1:hover, #pass2:hover, #takeCards1:hover, #takeCards2:hover {
+    -webkit-box-shadow: 0px 0px 6px 5px rgba(39,41,50,0.28); 
+    box-shadow: 0px 0px 6px 5px rgba(39,41,50,0.28);
+}
+
+/* quit button */
+#quitgame {
+    position: absolute;
+
+    background-color: #D8A47F;
+    color: #0F7173;
+
+    padding: 5px 30px;
+    border: none;
+    border-radius: 10px;
+
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+
+    right: 100px;
+    top: 10px;
+}
+
+#quitgame:hover {
+    -webkit-box-shadow: 0px 0px 6px 5px rgba(39,41,50,0.28); 
+    box-shadow: 0px 0px 6px 5px rgba(39,41,50,0.28);
+}
+
+/* Target Number Show */
+#showTargetNumber {
+    position: relative;
+    width: 503px;
+    height: 215px;
+    background-image: url(images/TargetNumberImg.png);
+    background-size: cover;
+
+    left: 300px;
+
+    visibility: hidden;
+}
+
+#showTargetNumber .targetNumber {
+    position: absolute;
+    color: #E7ECEF;
+
+    font-size: 8em;
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    left: 340px;
+    top: -60px; 
+
+    width: 104px;
+    text-align: center;
+}
+/* .hidden {
+    visibility: hidden;
+}
+.visible {
+    visibility: visible;
+} */
+
+/* Cards */
+.main-card{
+    width: 150px;
+    height: 206px;
+    /* background-color: aqua; */ 
+
+    position: absolute;
+
+    transition: transform 0.8s, opacity 0.3s;
+}
+
+#card-stay {
+    width: 150px;
+    height: 206px;
+    /* background-color: aqua; */ 
+
+    position: absolute;
+}
+
+.card-front {
+    /* background-color: aqua; */
+    position: absolute;
+    width: 150px;
+    height: 206px;
+
+    backface-visibility: hidden;
+}
+
+.card-back {
+    /* background-color: rgb(211, 109, 30);
+    color: white; */
+    position: absolute;
+    width: 150px;
+    height: 206px;
+    transform: rotateY(180deg);
+
+    backface-visibility: hidden;
+}
+
+.card-stay-deal {
+    position: absolute;
+    width: 150px;
+    height: 206px;
+    /* background-color: aqua;  */
+}
+
+.main-card, #card-stay, .card-front, .card-back, .card-stay-deal {
+    border-radius: 10px;
+}
+
+.main-card, #card-stay, .card-front, .card-stay-deal {
+    background-image: url(images/card-back.png);
+}
+
+/* Card Animations & Positioning */
+.flip-card, .flip-scorecards {
+    position: absolute;
+    background-color: transparent;
+    /* width: 150px;
+    height: 206px; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.card, .scorecard{
+    position: relative;
+    width: 150px;
+    height: 206px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+    opacity: 0;
+}
+
+.flip-card:first-child {
+    left: 200px;
+}
+
+.flip-card:nth-child(2) {
+    left: 400px;
+}
+
+.flip-card:nth-child(3) {
+    left: 600px;
+}
+
+.flip-card:last-child {
+    left: 800px;
+}
+
+
+.flip-animation {
+    transform: rotateY(180deg);
+}
+
+#dealcardsStay {
+    visibility: hidden;
+}
+
+
+.card-stay-deal:first-child {
+    left: 70px;
+    top: 380px;
+}
+
+.card-stay-deal:nth-child(2) {
+    left: 270px;
+    top: 380px;
+}
+
+.card-stay-deal:nth-child(3) {
+    left: 710px;
+    top: 380px;
+}
+
+.card-stay-deal:last-child {
+    left: 910px;
+    top: 380px;
+} 
+
+
+ 
+.flip-scorecards:first-child {
+    left: 70px;
+    top: 380px;
+}
+
+.flip-scorecards:nth-child(2) {
+    left: 270px;
+    top: 380px;
+}
+
+.flip-scorecards:nth-child(3) {
+    left: 710px;
+    top: 380px;
+}
+
+.flip-scorecards:last-child {
+    left: 910px;
+    top: 380px;
+}
+/* --------------------------------*/
+
+/* ---------Score screen ----------*/
+#score {
+    position: absolute;
+    width: 655px;
+    height: 215px;
+    background-image: url(images/scorebg.png);
+    background-size: cover;
+
+    left: 273px;
+    top: 44px;
+
+    visibility: hidden;
+}
+
+#score-screen {
+    position: relative;
+    width: 655px;
+    height: 215px;
+}
+
+#score .targetNumber {
+    position: absolute;
+    color: #E7ECEF;
+
+    font-size: 8em;
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    left: 270px;
+    top: -60px; 
+
+    width: 104px;
+    text-align: center;
+}
+
+#score p {
+    position: absolute;
+    color: #E7ECEF;
+
+    font-size: 2em;
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: center;
+    width: 230px;
+
+    left: 210px;
+    top: 120px;    
+}
+
+#scorebg {
+    position: relative;
+}
+
+#scorebg h3{ 
+    color: #E7ECEF;
+
+    font-size: 4em;
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    width: 55px;
+    text-align: center;
+}
+
+#player1score {
+    position: absolute;
+    top:-20px;
+    left: 80px;
+}
+
+#player2score {
+    position: absolute;
+    top: -20px;
+    left: 500px
+}
+
+/* ---------Round Notification screen ----------*/
+.popup-overlay {
+    position: fixed;       
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;         
+    background: rgba(0,0,0,0.6); 
+
+    visibility: hidden;
+
+    z-index: 1;        
+}
+
+#roundNotification {
+    position: absolute;
+    width: 1200px;
+    height: 750px;
+
+    visibility: hidden;
+
+    z-index: 2;
+}
+
+#notificationScreen {
+    position: relative;
+    width: 666px;
+    height: 350px;
+    background-image: url(images/NextRoundNotification.png);
+    background-size: cover;
+
+    border-radius: 20px;
+
+    left: 267px;
+    top: 200px;
+}
+
+#notificationScreen h1 {
+    position: absolute;
+    color: #E7ECEF;
+
+    font-size: 5em;
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    left: 53px;
+    top: 81px;
+}
+
+#notificationScreen p {
+    position: absolute;
+    color: #E7ECEF;
+
+    font-size: 3em;
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    left: 53px;
+    top: 156px;
+}
+
+/* ------------Ending Screen -------------*/
+/* ----------- Start Screen -----------*/
+#end {
+    position: absolute;
+    width: 900px;
+    height: 570px;
+    border-radius: 20px;
+    
+    left: 150px;
+    
+    top: 100px;
+
+    background-image: url(images/EndScreen.svg);
+    background-repeat: no-repeat;
+
+    visibility: hidden;
+}
+
+#ending-screen {
+    position: relative;
+    width: 500px;
+}
+
+#PlayAgain {
+    position: absolute;
+
+    background-color: #D8A47F;
+    color: #0F7173;
+
+    padding: 5px 30px;
+    border: none;
+    border-radius: 10px;
+
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+
+    width: 169px;
+
+    left: 367px;
+    top: 480px;
+}
+
+#PlayAgain:hover {
+    -webkit-box-shadow: 0px 0px 6px 5px rgba(39,41,50,0.28); 
+    box-shadow: 0px 0px 6px 5px rgba(39,41,50,0.28);
+}
+
+#end-text {
+    position: relative;
+}
+
+#end-text h1 {
+    position: absolute;
+    color: #E7ECEF;
+
+    font-size: 5em;
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    width: 500px;
+    text-align: center;
+
+    top: 35px;
+    left: 200px;
+}
+
+#end-text p {
+    position: relative;
+    color: #E7ECEF;
+
+    font-size: 1.5em;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    top: 250px;
+    left: 250px;
+
+    width: 437px;
+    text-align: center;
+
+    line-height: 24px;
+}
+
+/* Drawing a joker notify */
+#joker-drawn-player-1 {
+    position: absolute;
+    background-image: url(images/joker-notification.png);
+    width: 163px;
+    height: 125px;
+
+    left: 350px;
+    top: 270px;
+
+    visibility: hidden;
+
+}
+
+#joker-drawn-player-2 {
+    position: absolute;
+    background-image: url(images/joker-notification.png);
+    width: 163px;
+    height: 125px;
+
+    left: 990px;
+    top: 270px;
+
+    visibility: hidden;
+
+}
+
+/* --------------------------------*/
+
+/* Music */
+#start-screen-music {
+    position: absolute;
+
+    left: 850px;
+    top: 10px;
+}
+
+#game-screen-music {
+    position: absolute;
+
+    left: 1110px;
+    top: 5px;
+}
+
+.music {
+    background-color: #D8A47F;
+
+    padding: 10px 10px;
+    border: none;
+    border-radius: 999px;
+}
+
+.music:hover {
+    -webkit-box-shadow: 0px 0px 6px 5px rgba(39,41,50,0.28); 
+    box-shadow: 0px 0px 6px 5px rgba(39,41,50,0.28);
+}
+
+/* <section id="score">
+        <div id="scorebg">
+            <p id="player1score"></p>
+            <p id="player2score"></p>
+        </div>
+        <p>ROUND 1: Add</p>
+    </section> */
+
+@media only screen and (min-width: 800px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+}

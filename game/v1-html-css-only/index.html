@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On HTML & CSS Only</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section id="roundNotification">
+        <div id="notificationScreen">
+            <h1 class="round">ROUND 1</h1>
+            <p id="round-position">ADD</p>
+        </div>
+    </section>
+    <div class="popup-overlay"></div>
+
+    <section id="start">
+        <div id="starting-screen">
+            <div id="tutorial-text">
+                <h2>How To Play</h2>
+                <p>Over 7 rounds, aim for the Target Number without going over.</p>
+                <p>You will be playing with a 52-card standard deck plus 5 Jokers.</p>
+                <p>Each round, each player take two cards or pass.</p>
+                <ul>
+                    <li>Odd rounds add your taken cards to your score.</li>
+                    <li>Even rounds subtract them from your score.</li>
+                    <li>Draw a Joker, and your score resets to zero.</li>
+                </ul>
+                <p>After all 7 rounds, whoever is closest to the target wins.</p>
+            </div>
+            <button id="start-game">Start Game</button>
+            <button id="start-screen-music" class="music">
+                <i class="fas fa-music" style="color: #0F7173;"></i>
+            </button>
+        </div>
+    </section>
+
+    <section id="score">
+        <h1 class="targetNumber">0</h1>
+        <div id="score-screen">
+            <div id="scorebg">
+                <h3 id="player1score">0<h3/>
+                <h3 id="player2score">0<h3/>
+            </div>
+            <p class="round">ROUND 1: Add</p>
+        </div>
+    </section>
+
+    <section id="game">
+        <div id="card-container-game-score">
+                <div class="flip-card">
+                    <div class="card">
+                        <div class="card-front">
+                        </div>
+                        <div class="card-back">
+                            <img src="images/Club-1.png" alt="card" id="targetcard1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="card">
+                        <div class="card-front">
+                        </div>
+                        <div class="card-back">
+                            <img src="images/Club-1.png" alt="card" id="targetcard2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="card">
+                        <div class="card-front">
+                        </div>
+                        <div class="card-back">
+                            <img src="images/Club-1.png" alt="card" id="targetcard3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="card">
+                        <div class="card-front">
+                        </div>
+                        <div class="card-back">
+                            <img src="images/Club-1.png" alt="card" id="targetcard4">
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div id="dealcards">
+            <div id="dealcardsStay">
+                <div class="card-stay-deal"></div>
+                <div class="card-stay-deal"></div>
+                <div class="card-stay-deal"></div>
+                <div class="card-stay-deal"></div>
+            </div>
+
+            <div id="cardsMove">
+                <div class="flip-scorecards">
+                    <div class="scorecard">
+                            <div class="card-front">
+                            </div>
+                            <div class="card-back">
+                                <img src="images/Club-1.png" alt="card" id="card1">
+                            </div>
+                    </div>
+                </div>
+
+                <div class="flip-scorecards">
+                    <div class="scorecard">
+                            <div class="card-front">
+                            </div>
+                            <div class="card-back">
+                                <img src="images/Club-1.png" alt="card" id="card2">
+                            </div>
+                    </div>
+                </div>
+
+                <div class="flip-scorecards">
+                    <div class="scorecard">
+                            <div class="card-front">
+                            </div>
+                            <div class="card-back">
+                                <img src="images/Club-1.png" alt="card" id="card3">
+                            </div>
+                    </div>
+                </div>
+
+                <div class="flip-scorecards">
+                    <div class="scorecard">
+                            <div class="card-front">
+                            </div>
+                            <div class="card-back">
+                                <img src="images/Club-1.png" alt="card" id="card4">
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="stack">
+            <div id="card-stay"></div>
+            <div class="main-card"></div>
+            <div class="main-card"></div>
+            <div class="main-card"></div>
+            <div class="main-card"></div>
+        </div>
+
+        <div id="showTargetNumber">
+            <h1 class="targetNumber">0</h1>
+        </div>
+
+        <div id="playerbuttons">
+            <div id="player1options">
+                <button id="pass1">Pass</button>
+                <button id="takeCards1">Take Cards</button>
+            </div>
+
+            <div id="player2options">
+                <button id="pass2">Pass</button>
+                <button id="takeCards2">Take Cards</button>
+            </div>
+        </div>
+
+        <div id="joker-drawn-player-1"></div>
+        <div id="joker-drawn-player-2"></div>
+
+        <button id="quitgame">Quit Game</button>
+
+        <button id="game-screen-music" class="music">
+                <i class="fas fa-music" style="color: #0F7173;"></i>
+        </button>
+    </section>
+
+    <section id="end">
+        <div id="ending-screen">
+            <div id="end-text">
+                <h1>Player--</h1>
+                <p>some sort of sentence</p>
+            <button id="PlayAgain">Play Again</button>
+        </div>
+    </section>
+    
+</body>
+</html>
