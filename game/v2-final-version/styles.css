@@ -437,7 +437,7 @@ ul li {
     width: 230px;
 
     left: 210px;
-    top: 120px;    
+    top: 185px;    
 }
 
 #scorebg {
@@ -458,13 +458,13 @@ ul li {
 
 #player1score {
     position: absolute;
-    top:-20px;
+    top: 50px;
     left: 80px;
 }
 
 #player2score {
     position: absolute;
-    top: -20px;
+    top: 50px;
     left: 500px
 }
 
